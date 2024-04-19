@@ -3,32 +3,32 @@ import Section from './Section.astro';
 ---
 
 <Section
-  title="Model Y"
+  title="Model S"
   subtitle="Schedule a Test Drive"
   color="black"
-  id="model-y"
+  id="model-s"
 >
   <div slot="footer" class="gap-x-6 flex mx-auto">
     <a
       class="border-[3px] border-gray-600 bg-gray-600 text-sm rounded font-medium text-white px-12 py-2 inline-block transition-colors hover:border-gray-500 hover:bg-gray-500"
       href="#"
     >
-      Explore Inventory</a
+      Custom Order</a
     >
     <a
       class="bg-white text-sm rounded font-medium px-12 py-2 transition-colors hover:bg-black hover:text-white inline-flex justify-center items-center text-black"
       href="#"
     >
-      Custom Order</a
+      Learn More</a
     >
   </div>
 
   <img
     slot="background"
-    alt="Model Y"
-    class="h-full w-full object-cover object-center bg-image"
-    src="model-y.avif"
-    id="bg-image-modely"
+    alt="Model S"
+    class="h-full w-full object-cover object-center"
+    src="model-s.avif"
+    id="bg-image-models"
   />
 </Section>
 
@@ -45,12 +45,12 @@ import Section from './Section.astro';
   }
 
   let imageElement = document.querySelector(
-    '#bg-image-modely'
-  ) as HTMLImageElement;
+    '#bg-image-models'
+  ) as HTMLImageElement; // TypeScript
 
   if (isEdge()) {
-    imageElement.src = 'model-y.webp';
+    imageElement.src = 'model-s.webp';
   } else {
-    imageElement.src = 'model-y.avif';
+    imageElement.src = 'model-s.avif';
   }
 </script>
